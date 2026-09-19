@@ -540,6 +540,33 @@ function App() {
             </article>
           </div>
         </section>
+        <section className="showreel section-pad" id="showreel">
+          <div className="section-heading split-heading">
+            <div>
+              <p className="eyebrow">ВИДЕО-ПОРТФОЛИО</p>
+              <h2>Интерактивные проекты в работе</h2>
+            </div>
+
+            <p>
+              Короткая демонстрация виртуальных 3D-тренажеров,
+              интерактивных заданий и технических электронных курсов.
+            </p>
+          </div>
+
+          <div className="showreel-video">
+            <video
+              controls
+              playsInline
+              preload="metadata"
+            >
+              <source
+                src="/portfolio-showreel.mp4"
+                type="video/mp4"
+              />
+              Ваш браузер не поддерживает воспроизведение видео.
+            </video>
+          </div>
+        </section>
 
         <section className="projects section-pad" id="projects">
           <div className="section-heading projects-heading">
