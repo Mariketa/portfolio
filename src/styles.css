@@ -205,6 +205,49 @@ a:focus-visible, button:focus-visible { outline:3px solid rgba(24,132,204,.28); 
 .flow-row b { color:#7caaca; }
 .tag-row.large { margin-top:25px; }
 .tag-row.large span { font-size:11px; background:#e8f3fa; color:#1a6d9f; }
+.education-block {
+  display: grid;
+  grid-template-columns: 0.9fr 1.4fr;
+  gap: 40px;
+  margin: 36px 0 42px;
+  padding: 28px 32px;
+  border: 1px solid rgba(47, 111, 174, 0.18);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.education-title span {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #2f6fae;
+}
+
+.education-title h3 {
+  margin: 0;
+  font-size: 22px;
+  line-height: 1.25;
+}
+
+.education-content {
+  display: grid;
+  gap: 14px;
+}
+
+.education-content p {
+  margin: 0;
+  line-height: 1.65;
+}
+
+@media (max-width: 768px) {
+  .education-block {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 24px;
+  }
+}
 @media (max-width: 1180px) {
   .topbar { grid-template-columns:1fr auto; }
   .nav { display:none; }

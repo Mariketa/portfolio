@@ -426,13 +426,80 @@ function App() {
               <p className="eyebrow">МОЙ ПОДХОД</p>
               <h2>Полный цикл разработки e-learning</h2>
             </div>
-            <p>Объединяю инженерные знания, 3D-моделирование, программирование и разработку электронных курсов в единый учебный продукт.</p>
+
+            <p>
+              Объединяю инженерные знания, 3D-моделирование, программирование
+              и разработку электронных курсов в единый учебный продукт.
+            </p>
           </div>
+
+          <div className="education-block">
+            <div className="education-title">
+              <span>ОБРАЗОВАНИЕ</span>
+              <h3>Техническая база + педагогическая подготовка</h3>
+            </div>
+
+            <div className="education-content">
+              <p>
+                <strong>Магистр технической физики, ВГТУ.</strong><br />
+                Дополнительная квалификация — «Преподаватель высшей школы».
+              </p>
+
+              <p>
+                Техническая база помогает мне работать со сложным предметным контентом,
+                точно воспроизводить оборудование, процессы и методики
+                в интерактивных курсах.
+              </p>
+            </div>
+          </div>
+
           <div className="process-grid" id="skills">
-            <article className="process-card"><div className="step-head"><span>01</span><Icon name="cube" /></div><h3>3D-моделирование</h3><p>Создание технических моделей приборов и оборудования по документации, фотографиям и реальным образцам.</p></article>
-            <article className="process-card"><div className="step-head"><span>02</span><Icon name="code" /></div><h3>Интерактивная логика</h3><p>Программирование сценариев работы оборудования и взаимодействия пользователя в Verge3D.</p></article>
-            <article className="process-card"><div className="step-head"><span>03</span><Icon name="course" /></div><h3>Разработка курса</h3><p>Структура, навигация, задания, тестирование и интеграция 3D-модулей в CourseLab.</p></article>
-            <article className="process-card"><div className="step-head"><span>04</span><Icon name="cloud" /></div><h3>LMS</h3><p>Экспорт SCORM-пакетов, размещение и проверка готовых курсов в Moodle.</p></article>
+            <article className="process-card">
+              <div className="step-head">
+                <span>01</span>
+                <Icon name="cube" />
+              </div>
+              <h3>3D-моделирование</h3>
+              <p>
+                Создание технических моделей приборов и оборудования по документации,
+                фотографиям и реальным образцам.
+              </p>
+            </article>
+
+            <article className="process-card">
+              <div className="step-head">
+                <span>02</span>
+                <Icon name="code" />
+              </div>
+              <h3>Интерактивная логика</h3>
+              <p>
+                Программирование сценариев работы оборудования и взаимодействия
+                пользователя в Verge3D.
+              </p>
+            </article>
+
+            <article className="process-card">
+              <div className="step-head">
+                <span>03</span>
+                <Icon name="course" />
+              </div>
+              <h3>Разработка курса</h3>
+              <p>
+                Структура, навигация, задания, тестирование и интеграция
+                3D-модулей в CourseLab.
+              </p>
+            </article>
+
+            <article className="process-card">
+              <div className="step-head">
+                <span>04</span>
+                <Icon name="cloud" />
+              </div>
+              <h3>LMS</h3>
+              <p>
+                Экспорт SCORM-пакетов, размещение и проверка готовых курсов в Moodle.
+              </p>
+            </article>
           </div>
         </section>
 
