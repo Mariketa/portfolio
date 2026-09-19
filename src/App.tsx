@@ -420,7 +420,43 @@ function App() {
           <div><span className="stat-icon">↗</span><strong>Full cycle</strong><p>от модели до Moodle</p></div>
         </section>
 
-        <section className="process section-pad" id="about">
+        <section className="about section-pad" id="about">
+          <div className="about-grid">
+            <div className="about-heading">
+              <p className="eyebrow">ОБО МНЕ</p>
+
+              <h2>
+                Техническая база для разработки
+                сложного e-learning
+              </h2>
+            </div>
+
+            <div className="about-info">
+              <p className="about-lead">
+                Разрабатываю интерактивные электронные курсы
+                и виртуальные 3D-тренажеры для технического обучения.
+                Работаю с проектом от создания 3D-моделей и интерактивной
+                логики до сборки SCORM-курса и размещения в LMS.
+              </p>
+
+              <div className="education-row">
+                <div className="education-item">
+                  <span>ОБРАЗОВАНИЕ</span>
+                  <strong>Магистр технической физики</strong>
+                  <p>Воронежский государственный технический университет</p>
+                </div>
+
+                <div className="education-item">
+                  <span>ДОПОЛНИТЕЛЬНАЯ КВАЛИФИКАЦИЯ</span>
+                  <strong>Преподаватель высшей школы</strong>
+                  <p>ВГТУ</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="process section-pad" id="skills">
           <div className="section-heading split-heading">
             <div>
               <p className="eyebrow">МОЙ ПОДХОД</p>
@@ -428,32 +464,13 @@ function App() {
             </div>
 
             <p>
-              Объединяю инженерные знания, 3D-моделирование, программирование
-              и разработку электронных курсов в единый учебный продукт.
+              Объединяю инженерные знания, 3D-моделирование,
+              программирование и разработку электронных курсов
+              в единый учебный продукт.
             </p>
           </div>
 
-          <div className="education-block">
-            <div className="education-title">
-              <span>ОБРАЗОВАНИЕ</span>
-              <h3>Техническая база + педагогическая подготовка</h3>
-            </div>
-
-            <div className="education-content">
-              <p>
-                <strong>Магистр технической физики, ВГТУ.</strong><br />
-                Дополнительная квалификация — «Преподаватель высшей школы».
-              </p>
-
-              <p>
-                Техническая база помогает мне работать со сложным предметным контентом,
-                точно воспроизводить оборудование, процессы и методики
-                в интерактивных курсах.
-              </p>
-            </div>
-          </div>
-
-          <div className="process-grid" id="skills">
+          <div className="process-grid">
             <article className="process-card">
               <div className="step-head">
                 <span>01</span>
@@ -461,8 +478,8 @@ function App() {
               </div>
               <h3>3D-моделирование</h3>
               <p>
-                Создание технических моделей приборов и оборудования по документации,
-                фотографиям и реальным образцам.
+                Создание технических моделей приборов и оборудования
+                по документации, фотографиям и реальным образцам.
               </p>
             </article>
 
@@ -473,8 +490,8 @@ function App() {
               </div>
               <h3>Интерактивная логика</h3>
               <p>
-                Программирование сценариев работы оборудования и взаимодействия
-                пользователя в Verge3D.
+                Программирование сценариев работы оборудования
+                и взаимодействия пользователя в Verge3D.
               </p>
             </article>
 
@@ -485,8 +502,8 @@ function App() {
               </div>
               <h3>Разработка курса</h3>
               <p>
-                Структура, навигация, задания, тестирование и интеграция
-                3D-модулей в CourseLab.
+                Структура, навигация, задания, тестирование
+                и интеграция 3D-модулей в CourseLab.
               </p>
             </article>
 
@@ -497,7 +514,8 @@ function App() {
               </div>
               <h3>LMS</h3>
               <p>
-                Экспорт SCORM-пакетов, размещение и проверка готовых курсов в Moodle.
+                Экспорт SCORM-пакетов, размещение
+                и проверка готовых курсов в Moodle.
               </p>
             </article>
           </div>
