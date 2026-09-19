@@ -342,7 +342,12 @@ function App() {
         </nav>
 
         <div className="topbar-actions">
-          <a className="top-download" href="#contact" title="PDF-портфолио будет подключено после подготовки презентации">
+          <a
+            className="top-download"
+            href="/portfolio.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Icon name="download" /> <span>PDF-портфолио</span>
           </a>
           <button
@@ -369,8 +374,14 @@ function App() {
             <p className="hero-lead">Разрабатываю технические e-learning продукты полного цикла: 3D-моделирование → интерактивная логика → электронный курс → SCORM → Moodle.</p>
             <div className="hero-actions">
               <a className="btn primary" href="#projects">Смотреть проекты <Icon name="arrow" /></a>
-              <a className="btn ghost" href="#contact" title="PDF-портфолио будет подключено после подготовки презентации"><Icon name="download" /> Скачать PDF-портфолио</a>
-            </div>
+              <a
+                className="btn ghost"
+                href="/portfolio.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Icon name="download" /> Скачать PDF-портфолио
+              </a>            </div>
             <div className="tech-row" aria-label="Технологии">
               {['Blender','Verge3D','CourseLab','SCORM','Moodle','HTML','CSS','JavaScript'].map((item, i) => (
                 <span className="tech-chip" key={item}><b>{['◈','◇','CL','▱','M','5','3','JS'][i]}</b>{item}</span>
