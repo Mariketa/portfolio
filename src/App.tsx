@@ -756,10 +756,22 @@ function App() {
                   <div className="case-feature" key={feature}><span><Icon name="check" /></span><p>{feature}</p></div>
                 ))}
               </div>
-              <div className="case-result">
-                <span>РЕЗУЛЬТАТ</span>
-                <p>{project.result}</p>
+              
+            </section>
+            
+            <section className="case-result">
+              <div>
+                <p className="case-kicker">РЕЗУЛЬТАТ</p>
+                <h3>Готовый учебный продукт</h3>
+                <p>{selected.result}</p>
               </div>
+
+              <a
+                href="mailto:marina_barinova26@mail.ru?subject=Обсуждение%20e-learning%20проекта"
+                className="btn primary"
+              >
+                <Icon name="mail" /> Обсудить проект
+              </a>
             </section>
 
             <section className="case-section case-gallery-section">
@@ -786,10 +798,7 @@ function App() {
               <div className="case-tech-cloud">{selected.technologies.map((tech, index) => <span key={tech}><b>{String(index + 1).padStart(2, '0')}</b>{tech}</span>)}</div>
             </section>
 
-            <section className="case-result">
-              <div><p className="case-kicker">РЕЗУЛЬТАТ</p><h3>Готовый учебный продукт</h3><p>{selected.result}</p></div>
-              <a href="mailto:marina_barinova26@mail.ru?subject=Обсуждение%20e-learning%20проекта" className="btn primary"><Icon name="mail" /> Обсудить проект</a>
-            </section>
+            
           </article>
         </div>
       )}
