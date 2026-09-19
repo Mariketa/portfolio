@@ -396,6 +396,29 @@ a:focus-visible, button:focus-visible { outline:3px solid rgba(24,132,204,.28); 
   object-fit: cover;
 }
 
+.case-result {
+  margin-top: 24px;
+  padding: 22px 24px;
+  border-left: 3px solid #2f6fae;
+  border-radius: 0 16px 16px 0;
+  background: #f3f8fc;
+}
+
+.case-result span {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #2f6fae;
+}
+
+.case-result p {
+  margin: 0;
+  line-height: 1.65;
+  color: #53667a;
+}
+
 
 
 
