@@ -498,18 +498,20 @@ function App() {
                     <p>ВГТУ</p>
                   </div>
                 </div>
-              <div className="education-card">
-                <span className="education-number">02</span>
 
-                <div>
-                  <span className="education-label">АСПИРАНТУРА</span>
-                  <h3>Управление качеством продукции</h3>
-                  <p>
-                    Научная специальность 2.5.22 —
-                    «Управление качеством продукции. Стандартизация. Организация производства»
-                  </p>
+                <div className="education-card education-card-wide">
+                  <span className="education-number">03</span>
+
+                  <div>
+                    <span className="education-label">АСПИРАНТУРА</span>
+                    <h3>Управление качеством продукции</h3>
+                    <p>
+                      Научная специальность 2.5.22 —
+                      «Управление качеством продукции. Стандартизация.
+                      Организация производства»
+                    </p>
+                  </div>
                 </div>
-              </div>
               </div>
             </div>
 
