@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useRef, useMemo, useState } from 'react'
 import oscilloscope from './assets/oscilloscope.jpg'
 import chromatographFeature from './assets/chromatograph-feature.jpg'
 import chromatograph from './assets/chromatograph.png'
@@ -276,7 +276,35 @@ const navItems = [
 function App() {
   const [selected, setSelected] = useState<Project | null>(null)
   const [menuOpen, setMenuOpen] = useState(false)
+
+  const showreelRef = useRef<HTMLVideoElement | null>(null)
+
+  useEffect(() => {
+    const video = showreelRef.current
+
+    if (!video) return
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          video.play().catch(() => {})
+        } else {
+          video.pause()
+        }
+      },
+      {
+        threshold: 0.4
+      }
+    )
+
+    observer.observe(video)
+
+    return () => {
+      observer.disconnect()
+    }
+  }, [])
   const [activeSection, setActiveSection] = useState('top')
+  
 
   useEffect(() => {
     document.body.style.overflow = selected ? 'hidden' : ''
@@ -555,8 +583,11 @@ function App() {
 
           <div className="showreel-video">
             <video
+              ref={showreelRef}
               controls
+              muted
               playsInline
+              loop
               preload="metadata"
             >
               <source
