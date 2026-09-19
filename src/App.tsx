@@ -421,38 +421,58 @@ function App() {
         </section>
 
         <section className="about section-pad" id="about">
-          <div className="about-grid">
-            <div className="about-heading">
+          <div className="about-card">
+
+            <div className="about-main">
               <p className="eyebrow">ОБО МНЕ</p>
 
               <h2>
-                Техническая база для разработки
-                сложного e-learning
+                Техническая экспертиза
+                <br />
+                <em>в цифровом обучении</em>
               </h2>
+
+              <p className="about-position">
+                Разработчик электронных курсов и интерактивных
+                3D-тренажеров для технического обучения.
+              </p>
             </div>
 
-            <div className="about-info">
-              <p className="about-lead">
-                Разрабатываю интерактивные электронные курсы
-                и виртуальные 3D-тренажеры для технического обучения.
-                Работаю с проектом от создания 3D-моделей и интерактивной
-                логики до сборки SCORM-курса и размещения в LMS.
+            <div className="about-details">
+              <p className="about-description">
+                Работаю с техническим контентом и создаю учебные продукты
+                полного цикла: от 3D-моделей оборудования и программирования
+                интерактивных сценариев до сборки SCORM-курсов и размещения
+                в LMS.
               </p>
 
-              <div className="education-row">
-                <div className="education-item">
-                  <span>ОБРАЗОВАНИЕ</span>
-                  <strong>Магистр технической физики</strong>
-                  <p>Воронежский государственный технический университет</p>
+              <div className="about-education">
+                <div className="education-card">
+                  <span className="education-number">01</span>
+
+                  <div>
+                    <span className="education-label">ОБРАЗОВАНИЕ</span>
+                    <h3>Магистр технической физики</h3>
+                    <p>
+                      Воронежский государственный технический университет
+                    </p>
+                  </div>
                 </div>
 
-                <div className="education-item">
-                  <span>ДОПОЛНИТЕЛЬНАЯ КВАЛИФИКАЦИЯ</span>
-                  <strong>Преподаватель высшей школы</strong>
-                  <p>ВГТУ</p>
+                <div className="education-card">
+                  <span className="education-number">02</span>
+
+                  <div>
+                    <span className="education-label">
+                      ДОПОЛНИТЕЛЬНАЯ КВАЛИФИКАЦИЯ
+                    </span>
+                    <h3>Преподаватель высшей школы</h3>
+                    <p>ВГТУ</p>
+                  </div>
                 </div>
               </div>
             </div>
+
           </div>
         </section>
 
