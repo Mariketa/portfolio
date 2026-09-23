@@ -25,6 +25,11 @@ import spekLab from './assets/cases/spek-lab.jpg'
 import spekUnit from './assets/cases/spek-unit.png'
 import spekDevice from './assets/cases/spek-device.png'
 import maesLab from './assets/cases/maes-lab.png'
+import ispringSpectroCover from './assets/cases/ispring-spectro-cover.png'
+import ispringSpectroConditions from './assets/cases/ispring-spectro-conditions.png'
+import ispringSpectroElements from './assets/cases/ispring-spectro-elements.png'
+import ispringSpectroOpenDevice from './assets/cases/ispring-spectro-open-device.png'
+import ispringSpectroDecision from './assets/cases/ispring-spectro-decision.png'
 
 type GalleryItem = {
   src: string
@@ -107,6 +112,81 @@ const projects: Project[] = [
       { src: chromDetectors, title: 'Типы детекторов', caption: 'Практическое задание на распознавание детекторов и их назначения.' },
       { src: chromTheory, title: 'Изменение параметров', caption: 'Наглядная работа с изменениями формы хроматографических пиков.' },
       { src: chrom3d, title: 'Модель оборудования', caption: 'Один из экранов трехмерной части курса.' },
+    ],
+  },
+  {
+    id: 'ispring-spectro',
+    title: 'Подготовка спектрофотометра к поверке',
+
+    short: 'Интерактивный курс по контролю условий проведения поверки, подготовке прибора, внешнему осмотру и принятию решения о допуске к дальнейшим операциям.',
+
+    image: ispringSpectroCover,
+
+    tags: ['iSpring', 'Интерактив', 'Тестирование'],
+
+    role: 'Разработала структуру и визуальное оформление курса, интерактивные учебные экраны и навигацию, собрала интерактивности в iSpring Visuals, реализовала проверки знаний в QuizMaker и подготовила готовую HTML5-публикацию.',
+
+    goal: 'Сформировать последовательный сценарий подготовки спектрофотометра к поверке: научить специалиста проверять условия проведения работ, оценивать готовность оборудования, выполнять внешний осмотр и принимать решение о возможности перехода к дальнейшим операциям.',
+
+    features: [
+      'Интерактивное изучение требований перед началом поверки',
+      'iSpring Visuals по условиям проведения работ',
+      'Интерактивное изучение основных элементов спектрофотометра',
+      'Практика внешнего осмотра по чек-листу',
+      'Ситуационная задача на принятие решения о допуске',
+      'Пошаговый алгоритм принятия решения',
+      'Итоговое тестирование в iSpring QuizMaker',
+    ],
+
+    flow: [
+      'Введение',
+      'Условия',
+      'Подготовка прибора',
+      'Внешний осмотр',
+      'Решение о допуске',
+      'Тестирование',
+    ],
+
+    technologies: [
+      'PowerPoint',
+      'iSpring Suite 11',
+      'iSpring Visuals',
+      'QuizMaker',
+      'HTML5',
+    ],
+
+    format: 'HTML5',
+    authoring: 'iSpring Suite 11',
+    lms: 'Web',
+
+    result: 'Готовый интерактивный курс проводит пользователя через полный этап подготовки спектрофотометра к поверке: от проверки условий и оборудования до внешнего осмотра, оценки несоответствий и принятия решения о дальнейших действиях.',
+
+    gallery: [
+      {
+        src: ispringSpectroCover,
+        title: 'Электронный курс в iSpring',
+        caption: 'Экран курса по подготовке спектрофотометра к поверке.',
+      },
+      {
+        src: ispringSpectroConditions,
+        title: 'Условия проведения поверки',
+        caption: 'Интерактивность iSpring Visuals с требованиями к температуре, электропитанию, рабочему месту и оборудованию.',
+      },
+      {
+        src: ispringSpectroElements,
+        title: 'Изучение прибора',
+        caption: 'Интерактивное знакомство с основными элементами спектрофотометра.',
+      },
+      {
+        src: ispringSpectroOpenDevice,
+        title: 'Внешний осмотр',
+        caption: 'Изучение внутренних элементов прибора в рамках практической части курса.',
+      },
+      {
+        src: ispringSpectroDecision,
+        title: 'Принятие решения',
+        caption: 'Практическое задание на оценку результатов подготовки и возможность продолжения поверки.',
+      },
     ],
   },
   {
@@ -442,7 +522,7 @@ function App() {
         </section>
 
         <section className="stats" aria-label="Ключевые показатели">
-          <div><span className="stat-icon"><Icon name="book" /></span><strong>7+</strong><p>электронных курсов</p></div>
+          <div><span className="stat-icon"><Icon name="book" /></span><strong>8+</strong><p>электронных курсов</p></div>
           <div><span className="stat-icon"><Icon name="cube" /></span><strong>3D</strong><p>интерактивные тренажеры</p></div>
           <div><span className="stat-icon">▱</span><strong>SCORM</strong><p>интеграция с LMS</p></div>
           <div><span className="stat-icon">↗</span><strong>Full cycle</strong><p>от модели до Moodle</p></div>
@@ -616,7 +696,7 @@ function App() {
         <section className="projects section-pad" id="projects">
           <div className="section-heading projects-heading">
             <div><p className="eyebrow">ПОРТФОЛИО</p><h2>Избранные проекты</h2><p>Интерактивные учебные продукты для подготовки специалистов к работе с измерительным оборудованием.</p></div>
-            <span className="project-count">05 основных кейсов</span>
+            <span className="project-count">06 основных кейсов</span>
           </div>
 
           <div className="featured-projects">
@@ -708,7 +788,7 @@ function App() {
           <article className="case-view" role="dialog" aria-modal="true" aria-labelledby="case-title">
             <div className="case-toolbar">
               <button className="case-back" type="button" onClick={closeCase}><Icon name="back" /> Все проекты</button>
-              <span>Кейс {selectedNumber} / 07</span>
+              <span>Кейс {selectedNumber} / 08</span>
               <button className="case-close" type="button" onClick={closeCase} aria-label="Закрыть кейс">×</button>
             </div>
 
